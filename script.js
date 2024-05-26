@@ -58,3 +58,43 @@ gsap.from(".pg2d",{
     delay:2.4,
     opacity:0
 })
+
+
+var moving_images_div = document.querySelectorAll(".pg2d")
+var moving_images = document.querySelectorAll(".pg2d img")
+var arr = [0,1,2]
+
+moving_images_div[0].addEventListener("mouseover", function(){
+    moving_images[0].style.opacity = "1"
+})
+moving_images_div[0].addEventListener("mousemove", function(det){
+    moving_images[0].style.left = det.clientX + "px"
+    moving_images[0].style.transform = "translate(-75%,0%)"
+})
+moving_images_div[0].addEventListener("mouseout", function(){
+    moving_images[0].style.opacity = "0"
+})
+
+
+moving_images_div[1].addEventListener("mouseover", function(){
+    moving_images[1].style.opacity = "1"
+})
+moving_images_div[1].addEventListener("mousemove", function(det){
+    moving_images[1].style.left = det.clientX + "px"
+    moving_images[1].style.transform = "translate(-75%,0%)"
+})
+moving_images_div[1].addEventListener("mouseout", function(){
+    moving_images[1].style.opacity = "0"
+})
+
+
+moving_images_div[2].addEventListener("mouseover", function(){
+    moving_images[2].style.opacity = "1"
+})
+moving_images_div[2].addEventListener("mousemove", function(det){
+    moving_images[2].style.left = det.clientX + "px"
+    moving_images[2].style.transform = "translate(-75%,0%)"
+})
+moving_images_div[2].addEventListener("mouseout", function(){
+    moving_images[2].style.opacity = "0"
+})

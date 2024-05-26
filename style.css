@@ -153,7 +153,14 @@ body{
     position: absolute;
     top: 120vh;
     margin-left: 5vw;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+.pg2d img{
+    position: absolute;
+    opacity: 0;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+    z-index: -2;
+    mix-blend-mode: difference;
 }
 #divs2 div h2{
     font-size: 7vw;
